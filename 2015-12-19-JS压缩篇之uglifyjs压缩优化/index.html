@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JS压缩," />
 
 
 
@@ -84,15 +84,24 @@
 
 
 
-<meta name="description" content="Nothing it&apos;s impossible!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mosker">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="一、使用背景在网上搜下JS压缩优化，就会有很多压缩工具或者在线压缩，而且很多在线压缩都把各种常用的压缩工具都集合在一起，非常方便。比如http://tool.css-js.com/，当然这个是在线压缩网址，如果不采用在线压缩网址，我们要采用哪种压缩工具呢？现在流行的压缩工具各有各的优缺点，目前最流行的压缩工具是 UglifyJS ，JQuery 就是使用此工具压缩。UglifyJS 压缩率高，压缩">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS压缩篇之uglifyjs压缩优化">
+<meta property="og:url" content="http://yoursite.com/2015-12-19-JS压缩篇之uglifyjs压缩优化/index.html">
 <meta property="og:site_name" content="mosker">
-<meta property="og:description" content="Nothing it&apos;s impossible!">
+<meta property="og:description" content="一、使用背景在网上搜下JS压缩优化，就会有很多压缩工具或者在线压缩，而且很多在线压缩都把各种常用的压缩工具都集合在一起，非常方便。比如http://tool.css-js.com/，当然这个是在线压缩网址，如果不采用在线压缩网址，我们要采用哪种压缩工具呢？现在流行的压缩工具各有各的优缺点，目前最流行的压缩工具是 UglifyJS ，JQuery 就是使用此工具压缩。UglifyJS 压缩率高，压缩">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/01.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/02.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/03.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/05.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/06.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/08.png">
+<meta property="og:image" content="http://yoursite.com/images/imgs/20160621/07.png">
+<meta property="og:updated_time" content="2016-06-21T02:40:38.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mosker">
-<meta name="twitter:description" content="Nothing it&apos;s impossible!">
+<meta name="twitter:title" content="JS压缩篇之uglifyjs压缩优化">
+<meta name="twitter:description" content="一、使用背景在网上搜下JS压缩优化，就会有很多压缩工具或者在线压缩，而且很多在线压缩都把各种常用的压缩工具都集合在一起，非常方便。比如http://tool.css-js.com/，当然这个是在线压缩网址，如果不采用在线压缩网址，我们要采用哪种压缩工具呢？现在流行的压缩工具各有各的优缺点，目前最流行的压缩工具是 UglifyJS ，JQuery 就是使用此工具压缩。UglifyJS 压缩率高，压缩">
+<meta name="twitter:image" content="http://yoursite.com/images/imgs/20160621/01.png">
 
 
 
@@ -113,9 +122,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2015-12-19-JS压缩篇之uglifyjs压缩优化/"/>
 
-  <title> mosker </title>
+  <title> JS压缩篇之uglifyjs压缩优化 | mosker </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +145,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -225,9 +232,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -247,192 +254,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2015-12-25-前端构建工具gulp入门教程/" itemprop="url">
-                  前端构建工具gulp入门教程
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-25T09:47:50+08:00" content="2015-12-25">
-              2015-12-25
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index">
-                    <span itemprop="name">js</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015-12-25-前端构建工具gulp入门教程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015-12-25-前端构建工具gulp入门教程/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="一、gulp优点"><a href="#一、gulp优点" class="headerlink" title="一、gulp优点"></a>一、gulp优点</h4><p>gulp 和 grunt 都是基于Node.js创建的前端构建工具，目前这两个前端构建工具是最流行也是最好用的。 Gulp 作为全新的构建工具，相比于 Grunt 的频繁的 IO 操作，Gulp 的流操作，能更快地完成构建。 另外比起 Grunt 不仅配置简单而且更容易阅读和维护，所以学习 gulp 是前端开发人员的一个绝佳选择。</p>
-<h4 id="二、安装gulp"><a href="#二、安装gulp" class="headerlink" title="二、安装gulp"></a>二、安装gulp</h4><p>gulp 是基于Node.js，所以在所用这个工具之前需要安装<a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">node</a>，本教程是在WIN7环境下。</p>
-<p>首先我们要全局安装 gulp ：</p>
-<pre><code>npm install gulp -g
-</code></pre><p>运行命令后将gulp安装到全域环境下，让你可以存取gulp的CLI。然后需要在你本地端的项目目录进行安装，进入你的项目根目录，执行下列指令（确保目录有package.json文件）：</p>
-<pre><code>npm install gulp --save-dev
-</code></pre><p>运行指令后将gulp安装到项目根目录的专案内，并记录package.json文件devDependencies中，另外 gulp 模块包下载到node_modules文件夹中。</p>
-<p><img src="/images/imgs/20160620/gulp_01.png" alt="img"></p>
-<h4 id="三、使用gulp"><a href="#三、使用gulp" class="headerlink" title="三、使用gulp"></a>三、使用gulp</h4><p>Gulp的任务都是以插件的形式存在，本次示例以 gulp-jshint、gulp-concat、gulp-uglify、gulp-rename 为例，展示Gulp的常规用法（更多插件及用法参考<a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">官方API</a>）。</p>
-<p>1、安装本示例所需插件，运行如下命令：</p>
-<pre><code>npm install gulp-jshint gulp-concat gulp-uglify gulp-rename
-</code></pre><p>运行完成后可以看到所需插件已安装，如图：</p>
-<p><img src="/images/imgs/20160620/gulp_02.png" alt="img"></p>
-<p>2、接着我们在根目录下要创建gulpfile.js文件。</p>
-<p>3、打开gulpfile.js文件并加载插件：</p>
-<pre><code>var gulp = require(&apos;gulp&apos;),
-    jshint = require(&apos;gulp-jshint&apos;),//语法检查
-    concat = require(&apos;gulp-concat&apos;),//合并文件
-    uglify = require(&apos;gulp-uglify&apos;),//压缩代码
-    rename = require(&apos;gulp-rename&apos;);//重命名
-</code></pre><p>4、建立任务：</p>
-<p>jshint任务：</p>
-<pre><code>// 语法检查
-gulp.task(&apos;jshint&apos;, function () {
-    return gulp.src(&apos;public/javascripts/*.js&apos;)
-    .pipe(jshint())
-    .pipe(jshint.reporter(&apos;default&apos;));
-    });
-</code></pre><p>minify任务：</p>
-<pre><code>// 合并文件之后压缩代码
-gulp.task(&apos;minify&apos;, function (){
-    return gulp.src(&apos;public/javascripts/*.js&apos;)
-    .pipe(concat(&apos;all.js&apos;))
-    .pipe(gulp.dest(&apos;public/javascripts/dist&apos;))
-    .pipe(uglify())
-    .pipe(rename(&apos;all.min.js&apos;))
-    .pipe(gulp.dest(&apos;public/javascripts/dist&apos;));
-    });
-</code></pre><p>watch任务：</p>
-<pre><code>// 监视文件的变化
-gulp.task(&apos;watch&apos;, function () {
-    gulp.watch(&apos;public/javascripts/*.js&apos;, [&apos;jshint&apos;, &apos;minify&apos;]);
-    });
-</code></pre><p>预设任务：</p>
-<pre><code>// 注册缺省任务
-gulp.task(&apos;default&apos;, [&apos;jshint&apos;, &apos;minify&apos;, &apos;watch&apos;]);
-</code></pre><p>gulpfile.js文件代码如图：</p>
-<p><img src="/images/imgs/20160620/gulp_03.png" alt="img"></p>
-<p>5、运行任务</p>
-<p>运行前目录结构及文件：</p>
-<p><img src="/images/imgs/20160620/gulp_04.png" alt="img"></p>
-<p>运行已下指令：</p>
-<pre><code>gulp
-</code></pre><p>如图：</p>
-<p><img src="/images/imgs/20160620/gulp_05.png" alt="img"></p>
-<p>图中可以看到运行任务的变化，然后在看看目录发生了哪些文件变化：</p>
-<p><img src="/images/imgs/20160620/gulp_06.png" alt="img"></p>
-<p>是不是跟代码预设得到的效果一样的呢，细心的你就会发现文件大小也发生变化了，而且 gulp 运行速度相当快，你也可以运行单独的任务，例如：</p>
-<pre><code>gulp default
-gulp watch
-gulp minify
-gulp jshint
-</code></pre><h4 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h4><p>这个示例只是 gulp 的几个简单的使用方法，gulp 还有很多很强大的插件和功能，想了解的更深入可以访问<a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">gulp中文官网</a>。祝大家生活工作愉快！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015-12-19-JS压缩篇之uglifyjs压缩优化/" itemprop="url">
-                  JS压缩篇之uglifyjs压缩优化
-                </a>
+                JS压缩篇之uglifyjs压缩优化
               
             
           </h1>
@@ -498,9 +320,7 @@ gulp jshint
       
 
       
-        
-          
-            <h2 id="一、使用背景"><a href="#一、使用背景" class="headerlink" title="一、使用背景"></a>一、使用背景</h2><p>在网上搜下JS压缩优化，就会有很多压缩工具或者在线压缩，而且很多在线压缩都把各种常用的压缩工具都集合在一起，非常方便。比如<a href="http://tool.css-js.com/" target="_blank" rel="external">http://tool.css-js.com/</a>，当然这个是在线压缩网址，如果不采用在线压缩网址，我们要采用哪种压缩工具呢？现在流行的压缩工具各有各的优缺点，目前最流行的压缩工具是 UglifyJS ，JQuery 就是使用此工具压缩。UglifyJS 压缩率高，压缩选项多，并且具有优化代码，格式化代码功能。</p>
+        <h2 id="一、使用背景"><a href="#一、使用背景" class="headerlink" title="一、使用背景"></a>一、使用背景</h2><p>在网上搜下JS压缩优化，就会有很多压缩工具或者在线压缩，而且很多在线压缩都把各种常用的压缩工具都集合在一起，非常方便。比如<a href="http://tool.css-js.com/" target="_blank" rel="external">http://tool.css-js.com/</a>，当然这个是在线压缩网址，如果不采用在线压缩网址，我们要采用哪种压缩工具呢？现在流行的压缩工具各有各的优缺点，目前最流行的压缩工具是 UglifyJS ，JQuery 就是使用此工具压缩。UglifyJS 压缩率高，压缩选项多，并且具有优化代码，格式化代码功能。</p>
 <h2 id="二、UglifyJS使用环境配置"><a href="#二、UglifyJS使用环境配置" class="headerlink" title="二、UglifyJS使用环境配置"></a>二、UglifyJS使用环境配置</h2><p>UglifyJS 是用 NodeJS 编写的 JavaScript 压缩工具，所有node应用都避免不了下面的流程（已安装的可以略过）：</p>
 <ol>
 <li>安装node（<a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">Node.js安装配置</a>）</li>
@@ -544,36 +364,64 @@ echo 完成!
 pause &amp; exit
 </code></pre><p>新建一个txt文档，任意命名，将上面的代码粘贴进去，修改<code>JSFOLDER</code>后面的文件夹目录为你自己的，然后把<code>.txt</code>后缀改成<code>.bat</code>就可以啦！然后双击就可以批量使用uglifyjs压缩JS文件啦！经常处理压缩JS，在没有联网的情况下用这个方法还是挺方便的。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/JS压缩/" rel="tag">#JS压缩</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015-12-25-前端构建工具gulp入门教程/" rel="prev" title="前端构建工具gulp入门教程">
+                前端构建工具gulp入门教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -581,6 +429,14 @@ pause &amp; exit
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015-12-19-JS压缩篇之uglifyjs压缩优化/"
+           data-title="JS压缩篇之uglifyjs压缩优化" data-url="http://yoursite.com/2015-12-19-JS压缩篇之uglifyjs压缩优化/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -600,8 +456,17 @@ pause &amp; exit
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -651,6 +516,17 @@ pause &amp; exit
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、使用背景"><span class="nav-number">1.</span> <span class="nav-text">一、使用背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、UglifyJS使用环境配置"><span class="nav-number">2.</span> <span class="nav-text">二、UglifyJS使用环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、uglifyjs-JS压缩"><span class="nav-number">3.</span> <span class="nav-text">三、uglifyjs JS压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、uglifyjs压缩批处理"><span class="nav-number">4.</span> <span class="nav-text">四、uglifyjs压缩批处理</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -754,6 +630,10 @@ pause &amp; exit
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
